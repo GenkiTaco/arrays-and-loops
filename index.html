@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Arrays and Loops</title>
+</head>
+<body>
+    <h1>Arrays and Loops</h1>
+    <section>
+        <h2>Arrays</h2>
+        <p id="arrays">
+            An array is a data structure used to store multiple values in a single variable. 
+            The values within an array are indexed, meaning each element can be accessed by its position (index).
+        </p>
+
+        <h3>Indexed Arrays</h3>
+        <p id="indexed-array">
+            <ul>
+                <li>Indexed arrays use numeric (integer) positions to identify elements.</li>
+                <li>The first element is often at index 0 in languages like JavaScript, C, C++, Java, and Python.</li>
+                <li>The next element is at index 1, and so on.</li>
+            </ul>
+        </p>
+
+        <h3>Associative Arrays</h3>
+        <p id="associative-array">
+            <ul>
+                <li>Associative arrays use named keys to identify elements.</li>
+                <li>Keys can be strings or integers.</li>
+                <li>Values can be any data type, including strings, numbers, booleans, objects, and other arrays.</li>
+            </ul>
+        </p>
+
+        <h3>Multidimensional Arrays</h3>
+        <p id="multidimensional-array">
+            <ul>
+                <li>Multidimensional arrays are arrays within arrays.</li>
+                <li>They are used to store complex data structures, such as tables, matrices, and lists of lists.</li>
+                <li>Each element can be accessed by multiple indices.</li>
+            </ul>
+        </p>
+
+        <h3>Array Functions</h3>
+        <p id="array-functions">
+            <ul>
+                <li>Arrays have built-in functions for adding, removing, and sorting elements.</li>
+                <li>Common functions include push(), pop(), shift(), unshift(), splice(), and sort().</li>
+                <li>These functions can be used to manipulate arrays in various ways.</li>
+            </ul>
+        </p>
+
+        <h3>Sorting Arrays</h3>
+        <p id="sorting-arrays">
+            <ul>
+                <li>Arrays can be sorted in ascending or descending order.</li>
+                <li>Sorting can be done based on numeric or string values.</li>
+                <li>Custom sorting functions can be defined for complex sorting requirements.</li>
+            </ul>
+        </p>
+    </section>
+
+    <section>
+        <h2>Loops</h2>
+
+        <h3>For Loop</h3>
+        <p id="for-loop">
+            <ul>
+                <li>The for loop is used to iterate over a sequence of elements.</li>
+                <li>It consists of an initialization, condition, and increment/decrement expression.</li>
+                <li>The loop continues as long as the condition is true.</li>
+            </ul>
+        </p>
+      
+        <h3>While Loop</h3>
+        <p id="while-loop">
+            <ul>
+                <li>The while loop is used to execute a block of code as long as a condition is true.</li>
+                <li>It consists of a condition that is evaluated before each iteration.</li>
+                <li>The loop continues as long as the condition is true.</li>
+            </ul>
+        </p>
+       
+        <h3>Foreach Loop</h3>
+        <p id="foreach-loop">
+            <ul>
+                <li>The foreach loop is used to iterate over elements in an array or object.</li>
+                <li>It automatically assigns each element to a variable for processing.</li>
+                <li>It simplifies the process of iterating over arrays and objects.</li>
+            </ul>
+        </p>
+
+        <h3>Loop Control</h3>
+        <p id="loop-control">
+            <ul>
+                <li>Loop control statements like break and continue can be used to alter the flow of a loop.</li>
+                <li>Break terminates the loop early, while continue skips the current iteration.</li>
+                <li>These statements can be used to handle special cases or conditions within a loop.</li>
+            </ul>
+        </p>
+
+        <h3>Loop Functions</h3>
+        <p id="loop-functions">
+            <ul>
+                <li>Loops can be used to perform repetitive tasks, such as iterating over arrays or objects.</li>
+                <li>Functions can be defined inside loops to encapsulate logic and improve readability.</li>
+                <li>Functions can be called within loops to perform specific actions on each iteration.</li>
+            </ul>
+        </p>
+    </section>
+
+    <h2>Exercises</h2>
+        <h3>Exercise 1</h3>
+        <!-- Create a Todo List
+        Create an array todoList with three tasks.
+        Add a new task.
+        Remove the first task.
+        Log the updated list. -->
+        <div id="exercise-1">
+            <p>To Do List</p>
+            <ul id="taskList"></ul> 
+            <input type="text" id="task" placeholder="Enter a task">
+            <button id="addTask">Add Task</button>
+            <button id="removeTask">Remove Task</button>
+        </div>
+
+        <h3>Exercise 2</h3>
+        <!-- Count Even Numbers
+        Create an array of numbers.
+        Use a loop to count how many are even.
+        Log the result. -->
+        <div id="exercise-2">
+            <p>Numbers Array: <span id="numbersList"></span></p>
+            <p>Even Numbers: <span id="evenNumbers"></span></p>
+            <button id="countEvenNumbers">Count Even Numbers</button>
+        </div>
+
+        <h3>Exercise 3</h3>
+        <!-- Reverse an Array
+        Create an array.
+        Write a loop to reverse its elements.
+        Log the reversed array. -->
+        <div id="exercise-3">
+            <p>Original Array: <span id="original"></span></p>
+            <p>Reversed Array: <span id="reversed"></span></p>
+            <button id="reverseArray">Reverse Array</button>
+        </div>
+
+        <h3>Exercise 4</h3>
+        <!-- Find the Largest Number
+        Create an array of numbers.
+        Use a loop to find the largest number.
+        Log the result. -->
+        <div id="exercise-4">
+            <p>Number Array: <span id="numberArray"></span></p>
+            <p>Largest Number: <span id="largestNumber"></span></p>
+            <button id="findLargestNumber">Find Largest Number</button>
+        </div>
+
+        <h3>Exercise 5</h3>
+        <!-- Dynamic Greeting
+        Create a function greetUsers(array).
+        Use a loop to log a personalized greeting for each name in the array. -->
+        <div id="exercise-5">
+            <p>Dynamic Greeting</p>
+            <ul id="userList"></ul>
+            <button id="greetUsers">Greet Users</button>
+        </div>
+
+      <footer id="footer"> 
+        <p>&copy; 2025 <a href="">Arrays and Loops</a></p>
+      </footer>  
+    <script src="script.js"></script>
+</body>
+</html>
